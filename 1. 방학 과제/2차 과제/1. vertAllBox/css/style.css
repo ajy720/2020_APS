@@ -23,7 +23,7 @@ img{
     clear:both;
 }
 
-body > *{
+body{
     color: #222328;
     text-align: center;
     font-size: 3rem;
@@ -50,10 +50,13 @@ header > *{
     width: 200px;
     margin: 10px 0;
     height: 80px;
+    font-weight: bolder;
     background-color: lightblue;
     line-height: 80px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 nav{
