@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+body{
+    color: #222328;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+
+.logo > div{
+    background-color: lightblue;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+nav{
+    float: right;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.gnb > li{
+    width: 25%;
+    float: left;
+}
+
+.gnb > li > a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-right: none;
+}
+
+.gnb > li:last-child > a{
+    border-right: 1px solid gray;
+}
+
+.gnb > li:hover > a{
+    background-color: rgb(87, 154, 255);
+    color: white;
+}
+
+.gnb > li:hover > .sub{
+    display:block;
+}
+
+.sub{
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    display: none;
+}
+
+.sub > li{
+    width: 100%;
+    height: 40px;
+}
+
+.sub > li > a{
+    width: 100%;
+    line-height: 40px;
+    display: block;
+    font-size: 17px;
+}
+
+.sub > li > a:hover{
+    background-color: rgb(87, 154, 255);
+    color: white;
+}
+
+.slide{
+    height: 300px;
+    line-height: 300px;
+    background-color: #bbb;
+}
+
+.content{
+    height: 200px;
+    line-height: 200px;
+    background-color: #ccc;
+}
+
+footer{
+    height: 100px;
+    line-height: 100px;
+    background-color: #ddd;
+}
