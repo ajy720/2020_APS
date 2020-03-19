@@ -62,7 +62,6 @@ nav{
 
 .gnb > li{
     width: 100%;
-    position: relative;
 }
 
 .gnb > li > a{
@@ -86,10 +85,7 @@ nav{
 
 .sub{
     display: none;
-    position: absolute;
-    left: 180px;
-    top: 0px;
-    width: 180px;
+    width: 100%;
 }
 
 .sub > li{
@@ -110,6 +106,7 @@ nav{
     color: white;
     background-color: rgb(125, 46, 136);
 }
+
 
 .r_con{
     float: right;
