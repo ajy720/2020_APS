@@ -1,9 +1,9 @@
 $(document).ready(()=>{
-    $("ul.gnb>li").hover(()=>{
+    $("ul.gnb>li").hover(function(){
         $("ul.sub").stop().slideDown()
-    }, ()=>[
+    }, function(){
         $("ul.sub").stop().slideUp()
-    ])
+    })
 
     var slide = $(".slider li");
     var n = 0;
@@ -26,29 +26,3 @@ $(document).ready(()=>{
         playSlide()
     }, 2000);
 })
-
-
-/*
-var slide = $("ul.slider li");
-var sno = 0;
-
-function playSlide(){
-    $(slide[sno]).animate({
-        top:"300px"
-    }, 1000, function(){
-        $(this).css({top:"-300px"});
-    });
-
-    sno++;
-
-    if(sno>2) sno = 0;
-
-    $(slide[sno]).animate({
-        top:"0px"
-    }, 1000);
-}
-
-var timer = setInterval(function(){
-    playSlide();
-    console.log("Slide")
-}, 2000);*/

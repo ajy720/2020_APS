@@ -65,13 +65,14 @@ nav{
     margin-top: 27.5px;
 }
 .gnb{
-    width: 100%;
+    width: 680px;
     height: 45px;
     text-align: center;
     font-size: 18px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     background: #fff;
+    position: absolute;
 }
 
 ul.gnb > li{
