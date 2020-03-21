@@ -26,8 +26,6 @@ img{
 
 body{
     color: #222328;
-    text-align: center;
-    font-size: 3rem;
 }
 
 .wrap{
@@ -154,9 +152,81 @@ nav{
 
 .content{
     height: 200px;
-    line-height: 200px;
-    background-color: #ccc;
+    padding-top: 10px;
 }
+
+.content > section{
+    width: 400px;
+    float: left;
+    height: 180px;
+    padding: 0px 10px;
+}
+
+section > h3{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(55, 197, 85);
+    color: white;
+    border-radius: 6px 6px 0 0;
+    margin-left: 10px;
+}
+
+section > .box{
+    width: 380px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.notice > ul > li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom:5px;
+    padding: 0px 5px;
+}
+
+.notice > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice > ul > li:hover{
+    background-color: gray;
+    color: white;
+}
+
+.notice > ul > li > a > span{
+    float:right;
+}
+
+.gallery li{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: rgb(94, 212, 94);
+    text-align: center;
+    line-height: 100px;
+    font-size: 3rem;
+    margin-left: calc(70px/4);
+    margin-top: 20px;
+}
+
+.banner > a{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(175, 236, 157);
+    display: block;
+    text-align: center;
+    line-height: 180px;
+    font-size: 5rem;
+}
+
 
 footer{
     height: 100px;
