@@ -26,7 +26,6 @@ img{
 
 body{
     color: #222328;
-    font-size: 3rem;
 }
 
 .wrap{
@@ -51,10 +50,10 @@ header > *{
     margin: 10px 0;
     height: 80px;
     font-weight: bolder;
+    font-size: 18px;
     background-color: lightblue;
     line-height: 80px;
     text-align: center;
-    font-size: 18px;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -241,10 +240,80 @@ section > .box{
     border-radius: 10px;
 }
 
-
-
 footer{
     height: 100px;
+}
+
+footer > div{
+    float:left;
+    height: 100%;
+    text-align: center;
+}
+
+.flogo{
+    width: 200px;
     line-height: 100px;
+}
+
+.flogo > a{
+    padding-top: 5%;
+    display: block;
+    height: 90%;
+    width: 100%;
+}
+
+.flogo div{
+    height: 100%;
+    line-height: 80px;
     background-color: #ddd;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+footer > .copy{
+    width: 800px;
+    text-align: center;
+    padding: 0 100px;
+    padding-top: 35px;;
+}
+
+.copy > ul > li{
+    float: left;
+    margin-left: 15px;
+}
+
+.sns{
+    width: 200px;
+    padding-top: 20px;
+}
+
+.sns > i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 5px;
+}
+
+.sns > i > a{
+    display: block;
+    width: 60px;
+    line-height: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.sns > i:nth-child(1) > a{
+    background-color: #3B5998;
+}
+
+.sns > i:nth-child(2) > a{
+    background-color: #DD2A7B;
+}
+
+.sns > i:nth-child(3) > a{
+    background-color: #2DB400;
 }
