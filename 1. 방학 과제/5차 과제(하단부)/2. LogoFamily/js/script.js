@@ -28,4 +28,8 @@ $(window).ready(function(){
         console.log("slide")
     }, 4000);
     
+    $(".family > p").click(function(){
+        $(this).toggleClass("on");
+        $(".family > ul").stop().slideToggle()
+    })
 })
