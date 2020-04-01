@@ -39,3 +39,11 @@ $(document).ready(function(){
         $(t).removeClass("on")
     })
 })
+
+function openPop(){
+    document.querySelector(".modal_bg").style.display = "block"
+
+    document.querySelector(".modal > button").addEventListener("click", ()=>{
+        document.querySelector(".modal_bg").style.display = "none"
+    })
+}
