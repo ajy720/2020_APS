@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가로 전체 박스형</title>
+    <title>아래->위 슬라이드</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="wrap">
+    <div class="wrap">
+        <header>
             <a href="#" class="logo">
                 <div>대충 로고인척 하는 div</div>
             </a>
             <nav>
-                <ul class="gnb clearfix"> 
+                <ul class="gnb "> 
                     <li>
                         <a href="#">탑</a>
                         <ul class="sub">
@@ -54,14 +54,17 @@
                     </li>
                 </ul> 
             </nav>
+        </header>
+        <div class="slide">
+            <ul class="slider">
+                <li><a href="#"><img src="images/s1.jpg" alt="슬라이드1"></a></li>
+                <li><a href="#"><img src="images/s2.jpg" alt="슬라이드2"></a></li>
+                <li><a href="#"><img src="images/s3.jpg" alt="슬라이드3"></a></li>
+            </ul>
         </div>
-    </header>
-    
-    <div class="wrap">
-        <ul class="slide">Slide</ul>
+        
         <div class="content">Content</div>
+        <footer>Footer</footer>
     </div>
-    
-    <footer>Footer</footer>
 </body>
 </html>
