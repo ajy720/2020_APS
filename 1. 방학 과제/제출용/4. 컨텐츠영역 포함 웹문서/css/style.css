@@ -192,7 +192,7 @@ section > .box{
 }
 
 .box > .on{
-    display: block;
+    display: block; 
 }
 
 .notice > li{
@@ -218,17 +218,17 @@ section > .box{
 }
 
 .gal > li{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-top: 20px;
     margin-left:15px;
     float:left;
 }
 
 .gal a{
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     display:block;
     text-align: center;
     background-color: lightgray;
@@ -250,6 +250,10 @@ ul.short{
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+}
+
+.short > li img{
+    margin: 7.5px 5px 0 0;
 }
 
 footer{
