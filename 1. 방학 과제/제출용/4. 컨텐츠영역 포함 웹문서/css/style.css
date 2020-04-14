@@ -300,6 +300,10 @@ footer > .fmenu{
     background-color: rgb(189, 189, 189);
 }
 
+.copy > ul > li{
+    float:left;
+}
+
 .modal_bg{
     display: none;
     position: absolute;
