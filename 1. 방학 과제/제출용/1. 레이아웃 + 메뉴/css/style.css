@@ -1,142 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-img{
-    border: 0;
-    vertical-align: top;
+img {
+  border: 0;
+  vertical-align: top;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear:both;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-body{
-    color: #222328;
-    text-align: center;
-    font-size: 3rem;
+body {
+  color: #222328;
+  text-align: center;
+  font-size: 3rem;
 }
 
-.wrap{
-    width: 1200px;
-    margin: 0 auto;
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-header{
-    margin: 0 auto;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    z-index: 10;
-    background-color: rgb(112, 125, 248);
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  z-index: 10;
+  background-color: rgb(112, 125, 248);
 }
 
-header > .wrap{
-    height: 100px;
+header > .wrap {
+  height: 100px;
 }
 
-header > .wrap > *{
-    float: left;
+header > .wrap > * {
+  float: left;
 }
 
-.logo{
-    width: 200px;
-    margin: 10px 0;
-    height: 80px;
-    font-weight: bolder;
-    background-color: lightblue;
-    line-height: 80px;
-    text-align: center;
-    font-size: 18px;
-    overflow: hidden;
-    white-space: nowrap;
+.logo {
+  width: 200px;
+  margin: 10px 0;
+  height: 80px;
+  font-weight: bolder;
+  background-color: lightblue;
+  line-height: 80px;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-header > .wrap > nav{
-    float:right;
-    width: 700px;
-    margin-top: 27.5px;
-    position: relative;
+header > .wrap > nav {
+  float: right;
+  width: 700px;
+  margin-top: 27.5px;
+  position: relative;
 }
-.gnb{
-    width: 100%;
-    height: 45px;
-    text-align: center;
-    font-size: 18px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    background: #fff;
-    position: absolute;
-}
-
-ul.gnb > li{
-    width: 25%;
-    float: left;
+.gnb {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #fff;
+  position: absolute;
 }
 
-ul.gnb > li > a{
-    display: block;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    font-size: 22px;
+ul.gnb > li {
+  width: 25%;
+  float: left;
 }
 
-ul.gnb > li:hover > a{
-    background-color: orange;
-    color: #fff;
+ul.gnb > li > a {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 22px;
 }
 
-.sub{
-    width: 100%;
-    display: none;
+ul.gnb > li:hover > a {
+  background-color: orange;
+  color: #fff;
 }
 
-.sub > li{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
+.sub {
+  width: 100%;
+  display: none;
 }
 
-.sub > li > a{
-    display: block;
-    background-color: white;
-    width: 100%;
-    height: 100%;
+.sub > li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
 }
 
-.sub > li:hover > a{
-    background-color: rgb(112, 125, 248);
-    color: #fff;
+.sub > li > a {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 
-.slide{
-    text-align: center;
-    height: 300px;
-    line-height: 300px;
-    background-color: #bbb;
+.sub > li:hover > a {
+  background-color: rgb(112, 125, 248);
+  color: #fff;
 }
 
-.content{
-    height: 200px;
-    line-height: 200px;
-    background-color: #ccc;
+.slide {
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+  background-color: #bbb;
 }
 
-footer{
-    height: 100px;
-    line-height: 100px;
-    background-color: orange;
+.content {
+  height: 200px;
+  line-height: 200px;
+  background-color: #ccc;
+}
+
+footer {
+  height: 100px;
+  line-height: 100px;
+  background-color: orange;
 }

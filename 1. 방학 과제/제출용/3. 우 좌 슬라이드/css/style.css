@@ -1,165 +1,166 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-img{
-    border: 0;
-    vertical-align: top;
+img {
+  border: 0;
+  vertical-align: top;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear:both;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-body{
-    color: #222328;
-    text-align: center;
-    font-size: 3rem;
+body {
+  color: #222328;
+  text-align: center;
+  font-size: 3rem;
 }
 
-.wrap{
-    width: 1200px;
-    margin: 0 auto;
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    z-index: 10;
+header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 10;
 }
 
-.logo{
-    float: left;
-    width: 200px;
-    padding-top: 30px;
+.logo {
+  float: left;
+  width: 200px;
+  padding-top: 30px;
 }
 
-.logo div{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: lightgreen;
-    font-size: 18px;
+.logo div {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: lightgreen;
+  font-size: 18px;
 }
 
-nav{
-    float: right;
-    width: 700px;
-    padding-top: 50px;
-    margin-right: 30px;
+nav {
+  float: right;
+  width: 700px;
+  padding-top: 50px;
+  margin-right: 30px;
 }
 
-.nav_bg{
-    position: absolute;
-    top: 100px;
-    left: 0;
-    height: 120px;
-    width: 1200px;
-    background-color: lightgreen;
-    opacity: 0.9;
-    display: none;
+.nav_bg {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 120px;
+  width: 1200px;
+  background-color: lightgreen;
+  opacity: 0.9;
+  display: none;
 }
 
-.gnb{
-    position: absolute;
-    width: 700px;
+.gnb {
+  position: absolute;
+  width: 700px;
 }
 
-.gnb > li{
-    float: left;
-    width: 25%;
+.gnb > li {
+  float: left;
+  width: 25%;
 }
 
-.gnb > li:hover > a{
-    background-color: rgb(179, 255, 179);
-    border-bottom: none;
+.gnb > li:hover > a {
+  background-color: rgb(179, 255, 179);
+  border-bottom: none;
 }
 
-.gnb > li > a{
-    display: block;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background-color: white;
-    text-align: center;
-    border: 1px solid black;
-    border-right: none;
-    font-size: 18px;
+.gnb > li > a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-right: none;
+  font-size: 18px;
 }
 
-.gnb > li:last-child > a{
-    border-right: 1px solid black;
+.gnb > li:last-child > a {
+  border-right: 1px solid black;
 }
 
-.sub{
-    width: 100%;
-    height: auto;
-    position: relative;
-    display:none;
+.sub {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: none;
 }
 
-.sub > li{
-    width: 100%;
-    height: 40px;
+.sub > li {
+  width: 100%;
+  height: 40px;
 }
 
-.sub > li > a{
-    display: block;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 15px;
+.sub > li > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
 }
 
-.sub > li > a:hover{
-    background-color: rgba(0, 128, 0, 0.2);
-    color: white;
+.sub > li > a:hover {
+  background-color: rgba(0, 128, 0, 0.2);
+  color: white;
 }
 
-.slide{
-    height: 300px;
-    line-height: 300px;
-    background-color: #bbb;
-    position: relative;
-    overflow: hidden;
+.slide {
+  height: 300px;
+  line-height: 300px;
+  background-color: #bbb;
+  position: relative;
+  overflow: hidden;
 }
 
-.slider li{
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    left: 1200px;
-    top:0;
+.slider li {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 1200px;
+  top: 0;
 }
 
-.slider > li:first-child{
-    left: 0
+.slider > li:first-child {
+  left: 0;
 }
 
-.content{
-    height: 200px;
-    line-height: 200px;
-    background-color: #ccc;
+.content {
+  height: 200px;
+  line-height: 200px;
+  background-color: #ccc;
 }
 
-footer{
-    height: 100px;
-    line-height: 100px;
-    background-color: #ddd;
+footer {
+  height: 100px;
+  line-height: 100px;
+  background-color: #ddd;
 }

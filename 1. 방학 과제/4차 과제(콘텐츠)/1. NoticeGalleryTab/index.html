@@ -1,111 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>탭 있는 콘텐츠</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="wrap">
-        <header>
-            <a href="#" class="logo">
-                <div>대충 로고인척 하는 div</div>
-            </a>
-            <nav>
-                <ul class="gnb "> 
-                    <li>
-                        <a href="#">탑</a>
-                        <ul class="sub">
-                            <li><a href="#">블라우스</a></li>
-                            <li><a href="#">티</a></li>
-                            <li><a href="#">셔츠</a></li>
-                            <li><a href="#">니트</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">아우터</a>
-                        <ul class="sub">
-                            <li><a href="#">자켓</a></li>
-                            <li><a href="#">코트</a></li>
-                            <li><a href="#">가디건</a></li>
-                            <li><a href="#">머플러</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">팬츠</a>
-                        <ul class="sub">
-                            <li><a href="#">청바치</a></li>
-                            <li><a href="#">반바지</a></li>
-                            <li><a href="#">긴바지</a></li>
-                            <li><a href="#">레깅스</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">악세서리</a>
-                        <ul class="sub">
-                            <li><a href="#">귀걸이</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                        </ul>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
-        <div class="slide">
-            <ul class="slider">
-                <li><a href="#"><img src="images/s1.jpg" alt="슬라이드1"></a></li>
-                <li><a href="#"><img src="images/s2.jpg" alt="슬라이드2"></a></li>
-                <li><a href="#"><img src="images/s3.jpg" alt="슬라이드3"></a></li>
+      <header>
+        <a href="#" class="logo">
+          <div>대충 로고인척 하는 div</div>
+        </a>
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">탑</a>
+              <ul class="sub">
+                <li><a href="#">블라우스</a></li>
+                <li><a href="#">티</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">아우터</a>
+              <ul class="sub">
+                <li><a href="#">자켓</a></li>
+                <li><a href="#">코트</a></li>
+                <li><a href="#">가디건</a></li>
+                <li><a href="#">머플러</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">팬츠</a>
+              <ul class="sub">
+                <li><a href="#">청바치</a></li>
+                <li><a href="#">반바지</a></li>
+                <li><a href="#">긴바지</a></li>
+                <li><a href="#">레깅스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">악세서리</a>
+              <ul class="sub">
+                <li><a href="#">귀걸이</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="slide">
+        <ul class="slider">
+          <li>
+            <a href="#"><img src="images/s1.jpg" alt="슬라이드1" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/s2.jpg" alt="슬라이드2" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/s3.jpg" alt="슬라이드3" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content clearfix">
+        <section class="notice_gal">
+          <div class="tab">
+            <h3 class="on"><a href="#">공지사항</a></h3>
+            <h3><a href="#">갤러리</a></h3>
+          </div>
+          <div class="box">
+            <ul class="notice on">
+              <li>
+                <a href="#"
+                  >2018하반기 직원채용<span class="day">2018-10-19</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >입금자를 찾습니다.<span class="day">2018-10-18</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >5월 런칭 이벤트 회원 모집<span class="day"
+                    >2018-10-17</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >1+1 행사를 진행합니다.<span class="day">2018-10-16</span></a
+                >
+              </li>
             </ul>
-        </div>
-        
-        <div class="content clearfix">
-            <section class="notice_gal">
-                <div class="tab">
-                    <h3 class="on"><a href="#">공지사항</a></h3>
-                    <h3><a href="#">갤러리</a></h3>
-                </div>
-                <div class="box">
-                    <ul class="notice on">
-                        <li><a href="#">2018하반기 직원채용<span class="day">2018-10-19</span></a></li>
-                        <li><a href="#">입금자를 찾습니다.<span class="day">2018-10-18</span></a></li>
-                        <li><a href="#">5월 런칭 이벤트 회원 모집<span class="day">2018-10-17</span></a></li>
-                        <li><a href="#">1+1 행사를 진행합니다.<span class="day">2018-10-16</span></a></li>
-                    </ul>
-                    <ul class="gal">
-                        <li><a href="#">갤</a></li>
-                        <li><a href="#">러</a></li>
-                        <li><a href="#">리</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="banner">
-                <div class="tab">
-                    <h3 class="on">배너존</h3>
-                </div>
-                <a href="#">
-                    <img src="images/banner.jpg" alt="배너">
-                </a>
-            </section>
-            <section class="shortcut">
-                <div class="tab">
-                    <h3 class="on">바로가기</h3>
-                </div>
-                <div class="box">
-                    <ul class="short on">
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">멤버십혜택</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                </div>
-            </section>
-            
-        </div>
-        <footer>Footer</footer>
+            <ul class="gal">
+              <li><a href="#">갤</a></li>
+              <li><a href="#">러</a></li>
+              <li><a href="#">리</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="banner">
+          <div class="tab">
+            <h3 class="on">배너존</h3>
+          </div>
+          <a href="#">
+            <img src="images/banner.jpg" alt="배너" />
+          </a>
+        </section>
+        <section class="shortcut">
+          <div class="tab">
+            <h3 class="on">바로가기</h3>
+          </div>
+          <div class="box">
+            <ul class="short on">
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">멤버십혜택</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer>Footer</footer>
     </div>
-</body>
+  </body>
 </html>
