@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+* {
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+header > *,
+footer > * {
+  float: left;
+  height: 100px;
+}
+
+.logo {
+  width: 200px;
+  padding-top: 30px;
+}
+
+header > nav {
+  width: 800px;
+  margin-left: 170px;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding-top: 25px;
+}
+
+.navbar > li {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+
+.navbar > li:hover > .main {
+  background-color: #ccaee6;
+}
+
+.navbar > li > .main {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccaee6;
+  border-right: none;
+}
+.navbar > li:last-child > .main {
+  border-right: 1px solid #ccaee6;
+}
+
+.sub {
+  width: 200px;
+  height: 120px;
+  line-height: 40px;
+  position: relative;
+  z-index: 999;
+  display: none;
+}
+
+.sub > li,
+.sub > li > a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+.sub > li > a:hover {
+  background-color: #e0dafc;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider > a {
+  position: absolute;
+  left: -1200px;
+}
+
+.slider > a:first-child {
+  left: 0;
+}
+
+.content {
+  width: 100%;
+  height: 200px;
+}
+
+.content > div {
+  width: 400px;
+  height: 200px;
+  padding: 5px;
+  float: left;
+  position: relative;
+}
+
+.box {
+  width: 390px;
+  height: 160px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 0 15px 0 0;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+h3.on {
+  background-color: rgb(155, 1, 32);
+  color: white;
+}
+
+.notice {
+  padding: 5px;
+}
+
+.notice li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid lightgray;
+  padding: 0 5px;
+}
+
+.notice li:hover {
+  color: gray;
+  background-color: #f9f9f9;
+}
+
+.gallery > a > img {
+  position: relative;
+  margin-top: 20px;
+  width: 30%;
+  margin-left: 6.5px;
+}
+
+.gallery > a > img:hover {
+  top: 5px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.copy {
+  width: 800px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.sns {
+  width: 200px;
+  height: 100px;
+}
+
+.sns > a {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 6px;
+}
+
+.sns img {
+  width: 60px;
+  height: 60px;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  display: none;
+}
+
+.popup h2 {
+  margin: 10px;
+}
+
+.popup > button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #555;
+  color: white;
+  border: 0;
+}
