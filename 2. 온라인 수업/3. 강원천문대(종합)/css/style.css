@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+* {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+}
+
+.content {
+  width: 100%;
+  height: 200px;
+}
+
+.logo {
+  display: block;
+  width: 210px;
+  height: 100px;
+  padding-top: 11px;
+}
+
+header > * {
+  float: left;
+}
+
+header > nav {
+  width: 800px;
+  height: 50px;
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.navbar > li {
+  float: left;
+}
+
+.navbar > li > .main {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid black;
+  border-right: 0;
+  font-size: 20px;
+}
+
+.navbar > li:hover > .main {
+  background-color: #0066ad;
+  color: white;
+}
+
+.navbar > li:last-child > .main {
+  border-right: 1px solid black;
+}
+
+.sub {
+  width: 200px;
+  height: 120px;
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+
+.sub > li,
+.sub > li > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(250, 250, 250);
+}
+
+.sub > li > a:hover {
+  background-color: #30a3f3;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider > a {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 2s;
+}
+
+.slider > a:first-child {
+  opacity: 1;
+}
+
+.content > div {
+  width: 400px;
+  height: 200px;
+  padding: 5px;
+  position: relative;
+  float: left;
+}
+
+.content > div h3 {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  margin-left: 10px;
+}
+
+h3.on {
+  background-color: #30a3f3;
+  color: white;
+}
+
+.gal_tab {
+  position: absolute;
+  top: 5px;
+  left: 104px;
+}
+
+.content > div > .box {
+  width: 390px;
+  height: 160px;
+  border: 1px solid black;
+  border-radius: 0px 15px 0 0;
+  overflow: hidden;
+}
+
+.notice_gal > .box {
+  padding: 5px;
+  display: none;
+}
+
+.notice_gal > div.on {
+  display: block;
+}
+
+.notice_gal > .box > ul > li {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid gray;
+}
+.notice_gal > .box > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.notice_gal > .box > ul > li:hover * {
+  color: gray;
+}
+
+.notice_gal > .box > ul > li span {
+  float: right;
+  background-color: transparent;
+}
+
+.gallery > a {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.gallery > a > img {
+  height: 100px;
+}
+
+.gallery > a:hover {
+  margin-top: 25px;
+  opacity: 0.8;
+}
+
+.shortcut > .box {
+  padding: 5px;
+}
+
+.shortcut > .box > a {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+
+.shortcut > .box > a:last-child {
+  border-bottom: 1px solid black;
+}
+
+.shortcut > .box > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+footer > a {
+  float: left;
+  border-right: 1px solid lightgray;
+}
+
+footer > div {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+}
+
+.fmenu {
+  border-bottom: 1px solid lightgray;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+}
+
+.popup h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.popup > button {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #444;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
