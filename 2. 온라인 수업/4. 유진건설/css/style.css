@@ -1,0 +1,308 @@
+* {
+  color: #333333;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 1200px;
+  position: relative;
+}
+
+header,
+footer {
+  height: 100px;
+  width: 100%;
+}
+
+header > * {
+  float: left;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.logo > img {
+  width: 180px;
+  margin: 27px 10px;
+}
+
+header > nav {
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.nav_bg {
+  background-color: #ff5050;
+  width: 1200px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: -300;
+  display: none;
+}
+
+nav > ul.main > li {
+  text-align: center;
+  width: 200px;
+  float: left;
+}
+
+.main > li:hover > a {
+  background-color: #ff5050;
+  color: white;
+}
+
+.main > li > a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #ff5050;
+  margin-top: 1px;
+  border-left: 0;
+}
+
+.main > li:first-child > a {
+  border-left: 1px solid #ff5050;
+}
+
+.sub {
+  display: none;
+}
+
+.sub > li > a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff5050;
+  color: white;
+}
+
+.sub > li > a:hover {
+  background-color: white;
+  color: #333333;
+}
+
+.slide {
+  position: relative;
+  z-index: -400;
+  height: 300px;
+}
+
+.slider {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slider > a {
+  display: block;
+  width: 1200px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.slider > a:first-child {
+  opacity: 1;
+}
+
+.content {
+  height: 200px;
+}
+
+.content > div {
+  float: left;
+  width: 400px;
+  height: 200px;
+  padding: 5px 10px;
+}
+
+.tab {
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  font-size: 17px;
+  background-color: #5b9bd5;
+  color: white;
+  margin-left: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.content > div > .box {
+  width: 100%;
+  height: 160px;
+  border: 1px solid black;
+}
+
+.notice > .box li {
+  width: 360px;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px 10px;
+  border-bottom: 1px solid lightgray;
+  text-align: right;
+}
+
+.notice > .box li > a {
+  width: 75%;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align-last: left;
+}
+
+.notice > .box li:hover > a {
+  color: #ff5050;
+}
+
+.gallery .box > a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 30px 11px;
+}
+
+.gallery .box > a:hover {
+  opacity: 0.5;
+}
+
+.link > a > div {
+  border: 1px solid black;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 5px;
+  border-radius: 10px;
+}
+
+.link > a > div:hover {
+  background-color: #5b9bd5;
+  color: white;
+}
+
+footer {
+  background-color: rgb(240, 240, 240);
+}
+
+footer > .fmenu {
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  float: left;
+}
+
+footer > .fmenu > a {
+  margin: 0 50px;
+}
+
+footer > .fmenu > a:hover {
+  color: gray;
+}
+
+.copy {
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+
+.fam {
+  width: 200px;
+  height: 100px;
+  float: right;
+  border-left: 1px solid black;
+}
+
+.fam > div {
+  width: 180px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #ffc000;
+  margin: 0 auto;
+}
+
+.fam > ul {
+  display: none;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fam a {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  color: white; 
+  background-color: #ce9a00;
+}
+
+i{
+  font-style: normal;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+i.on{
+  transform: rotate(180deg);
+}
+
+.pop{
+  width: 500px;
+  height: 350px;
+  border: 1px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  display: none;
+}
+
+.pop > h2{
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 4px;
+}
+
+.pop > ul{
+  padding: 10px;
+}
+
+button{
+  width: 60px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #535353;
+  color: white;
+  border: 0;
+  font-size: 17px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
