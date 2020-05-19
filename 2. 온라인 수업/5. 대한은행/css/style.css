@@ -1,0 +1,297 @@
+* {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header,
+footer {
+	width: 100%;
+	height: 100px;
+}
+
+header > * {
+	float: left;
+}
+
+.logo {
+    display: inline-block;
+	width: 200px;
+	height: 100px;
+	padding-top: 30px;
+}
+
+nav {
+    
+	margin-left: 150px;
+	margin-top: 30px;
+	width: 802px;
+	height: auto;
+	text-align: center;
+    border: 1px solid #999;
+    position: relative;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main > li {
+    float: left;
+}
+
+.main > li > a {
+	height: 45px;
+	line-height: 45px;
+    font-size: 20px;
+    border-right: 1px solid #999;
+}
+
+.main > li:last-child > a{
+    border-right: none;
+}
+
+.sub{
+    border-top: 1px solid #999;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+    font-size: 15px;
+}
+
+.main > li:hover > a, .sub > li:hover > a{
+    background-color: #E66B27;
+    color: white;
+}
+
+.sub{
+    display:none;
+}
+
+.slider, .slider *{
+    display: block;
+    width: 1200px;
+    height: 300px;
+}
+
+.slider{
+    position: relative;
+}
+
+.slide{
+    overflow: hidden;
+    position: absolute;
+}
+
+.slide > a{
+    left: -1200px;
+    position: absolute;
+}
+
+.slide > a:first-child{
+    left: 0;
+}
+
+.content{
+    width: 1200px;
+    height: 200px;
+}
+
+.content > div{
+    width: 380px;
+    height: 190px;
+    margin: 5px 10px;
+    float: left;
+    position: relative;
+}
+
+.notice_gal > .box{
+    display: none;
+}
+
+.notice_gal > div.on{
+    display: block;
+}
+
+h3.tab{
+    width: 100px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab{
+    position: absolute;
+    top: 0;
+}
+
+.gal_tab{
+    left: 119px;
+}
+
+.notice_gal > h3:first-child{
+    margin-left: 20px;
+}
+
+h3.on{
+    background-color: #E66B27;
+    color: white;
+}
+
+.content .box{
+    margin-top: 29px;
+    width: 380px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.notice > ul{
+    width: 100%;
+    height: 100%;
+}
+
+.notice > ul > li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    padding: 0 5px;
+}
+
+.notice > ul > li:hover > *{
+    color: gray;
+}
+
+.notice > ul > li > span{
+    float: right;
+}
+
+.gallery > a{
+    display: inline-block;
+    margin: 25px 9px;
+}
+
+div.gallery > a:hover > img{
+    opacity: 0.5;
+}
+
+.banner > .box{
+    padding: 0;
+}
+
+.banner img{
+    width: 378px;
+    height: 158px;
+}
+
+.link{
+    padding-top: 10px;
+}
+
+.link > a{
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 40px;
+    margin: 10px auto 0;
+    font-size: 20px;
+}
+
+
+
+.link img{
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    float: left;
+}
+
+.fmenu{
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+}
+
+.fmenu > li{
+    float: left;
+    text-align: center;
+    margin: 0 70px;
+}
+
+.fmenu > li:hover > a{
+    color: #aaa;
+}
+
+.copy{
+    float: right;
+    height: 50px;
+    width: 1000px;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 2px;
+}
+
+footer{
+    background-color: #ddd;
+}
+footer > .logo{
+    border-right: 1px solid black;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.popup > h2{
+    border-bottom: 1px solid#333;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+
+.popup > button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 0;
+    background-color: #454545;
+    color: white;
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 3px;;
+}
+
+.popup > button:hover{
+    background-color: #555;
+}
