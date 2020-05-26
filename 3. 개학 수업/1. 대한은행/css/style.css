@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+}
+
+.main_container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: lightgray;
+}
+
+header,
+footer {
+	margin: 0 auto;
+	height: 100px;
+	width: 1200px;
+}
+
+header > * {
+	float: left;
+}
+
+.slide {
+	width: 100%;
+	height: 300px;
+}
+
+.content {
+	width: 100%;
+	height: 200px;
+}
+
+.logo {
+	width: 200px;
+	height: 100px;
+	padding-top: 30px;
+	margin-right: 150px;
+}
+
+nav {
+	border: 1px solid gray;
+	width: 802px;
+	margin-top: 25px;
+	position: relative;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav > ul {
+	text-align: center;
+}
+
+.main > li {
+	float: left;
+}
+
+.main > li > a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 200px;
+	font-size: 20px;
+	border-right: 1px solid gray;
+}
+
+.main > li:last-child > a {
+	border-right: 0;
+}
+
+.main > li:hover > a {
+	color: white;
+	background-color: #0076be;
+}
+
+.sub {
+	border-top: 1px solid gray;
+	display: none;
+}
+
+.sub > li > a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 200px;
+	font-size: 17px;
+}
+
+.sub > li > a:hover {
+	color: white;
+	background-color: #0076be;
+}
+
+.slide {
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+.slider {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.slider > img {
+	position: absolute;
+	left: -1200px;
+	width: 100%;
+	height: 300px;
+}
+
+.slider > img:first-child {
+	left: 0;
+}
+
+.content > div {
+	width: 390px;
+	height: 190px;
+	margin: 5px;
+	float: left;
+}
+
+h3.tab {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	margin-left: 20px;
+}
+
+h3.gal_tab {
+	position: relative;
+	top: -189px;
+    left: 99px;
+    background-color: white;
+}
+
+.box {
+	width: 100%;
+	height: 160px;
+	border: 1px solid black;
+	margin-top: -1px;
+}
+
+h3.on {
+    background-color: #e66b27;
+    color: white;
+}
