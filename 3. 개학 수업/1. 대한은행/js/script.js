@@ -26,4 +26,11 @@ $(document).ready(function(){
     setInterval(() => {
         playSlide()
     }, 3000);
+
+    $(".notice_gal > .tab").click(function(){
+        $(".notice_gal > .tab").removeClass("on");
+        $(".notice_gal > .box").removeClass("on");
+        $(this).addClass("on");
+        $(this).next(".box").addClass("on");
+    })
 })
