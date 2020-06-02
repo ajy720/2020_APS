@@ -33,4 +33,12 @@ $(document).ready(function(){
         $(this).addClass("on");
         $(this).next(".box").addClass("on");
     })
+
+    $(".popup > button").click(function(){
+        $(".popup").hide()
+    })
+
+    $(".notice_gal li:first-child").click(function(){
+        $(".popup").show()
+    })
 })
