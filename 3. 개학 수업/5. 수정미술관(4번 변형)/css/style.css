@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #888;
+	font-style: normal;
+    list-style: none;
+    user-select: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+header,
+footer {
+	width: 100%;
+	height: 100px;
+}
+
+header {
+	background-color: #4a4948;
+}
+
+footer {
+	background-color: #caac7d;
+}
+
+footer .container > * {
+	float: left;
+}
+
+.container {
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.main_container {
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 200px;
+	height: 40px;
+	margin-top: 30px;
+	float: left;
+}
+
+nav {
+	float: right;
+	margin-right: 50px;
+}
+
+.main a {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.main {
+	height: 50px;
+	margin-top: 25px;
+}
+
+.main > li {
+	position: relative;
+	z-index: 99;
+	float: left;
+	margin-left: 10px;
+	border-radius: 25px;
+	overflow: hidden;
+	border: 1px solid #caac7d71;
+}
+
+.main > li > a {
+	/* background-color: #75757571; */
+	/* background-color: #caac7d71; */
+	font-size: 20px;
+	color: whitesmoke;
+	transition: 0.3s;
+}
+
+.main > li:last-child > a {
+	border-right: 0;
+}
+
+.main > li:hover > a {
+    background-color: #caac7d;
+}
+
+.sub {
+	display: none;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+
+.sub a {
+	height: 40px;
+	line-height: 40px;
+	background-color: #4a4948;
+	color: whitesmoke;
+	transition: 0.1s;
+}
+
+.sub li:hover a {
+	background-color: #caac7d;
+}
+
+.slider {
+	width: 1200px;
+	height: 300px;
+	position: relative;
+}
+
+.slide {
+	width: 1200px;
+	height: 300px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.slide a {
+	position: absolute;
+    top: -150px;
+    opacity: 0;
+}
+
+.slide a:first-child {
+    opacity: 1;
+	top: 0px;
+}
+
+.content {
+	width: 100%;
+	height: 200px;
+}
+
+.content > div {
+	float: left;
+	width: 400px;
+	height: 200px;
+	padding: 5px;
+	position: relative;
+}
+
+.content h3.tab {
+	position: absolute;
+	top: 6px;
+	left: 30px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.content .box {
+	margin-top: 30px;
+	border: 1px solid black;
+	position: absolute;
+	width: 390px;
+	height: 160px;
+}
+
+h3.on {
+	background-color: #caac7d;
+	color: white;
+}
+
+.notice_gal .gal_tab {
+	margin-left: 99px;
+}
+
+.notice_gal ul {
+	width: 100%;
+	padding: 5px;
+}
+
+.notice_gal li {
+	width: 100%;
+	padding: 0 5px;
+	margin-bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #4a4948;
+	transition: 0.1s;
+}
+
+.notice_gal li:hover {
+	background-color: #caac7d;
+	border-radius: 5px 5px 0 0;
+}
+
+.notice_gal li:hover > * {
+	color: white;
+}
+
+.notice_gal li a {
+	width: 75%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.notice_gal li span {
+	float: right;
+}
+
+.content .on {
+	display: block;
+	transition: 0.2s;
+}
+
+.gal_box a {
+    position: relative;
+	float: left;
+	margin: 20px 9.5px;
+}
+
+.gal_box img {
+	width: 110px;
+	height: 100px;
+}
+
+.banner img {
+	width: 388px;
+	height: 158px;
+}
+
+.link a {
+	float: right;
+	width: 120px;
+	margin: 30px 5px;
+	padding: 10px;
+	text-align: center;
+	font-size: larger;
+	font-weight: bolder;
+	border: 2px solid #caac7d;
+	border-radius: 15px;
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+.link a:hover {
+	border-color: #4a4948;
+	opacity: 1;
+}
+
+.link a:hover span {
+	color: rgb(70, 70, 70);
+}
+
+.link img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.copy {
+	width: 800px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.sns {
+	width: 200px;
+}
+
+.sns a {
+	float: right;
+	margin: 20px 3px;
+}
+
+.sns img {
+	width: 60px;
+	height: 60px;
+}
+
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    display: none;
+    z-index: 99;
+}
+
+.modal .bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border: 1px solid black;
+	padding: 10px;
+	width: 500px;
+	height: 300px;
+}
+
+.popup h3 {
+	text-align: center;
+	color: black;
+	border-bottom: 1px solid #caac7d;
+	padding: 0px 5px 5px;
+	margin-bottom: 5px;
+}
+
+.popup button {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: none;
+	border-radius: 5px;
+	width: 60px;
+	height: 30px;
+	font-size: 17px;
+	background-color: rgb(34, 34, 34);
+	color: white;
+}
+
+.popup button:hover {
+	background-color: rgb(65, 65, 65);
+}
+
+/*
+주조색 : #4A4948
+보조색 : #CAAC7D
+*/
