@@ -10,41 +10,44 @@ $(document).ready(function () {
 
 	var s = $(".slider a");
 	var n = 0;
-
 	function playSlide() {
 		$(s[n++]).fadeOut("slow");
+		if (n > 2) n = 0;
+		$(s[n]).fadeIn("slow");
+	}
 
-        if (n > 2) n = 0;
-        
-        $(s[n]).fadeIn("slow");
-    };
-    
-    setInterval(playSlide,3000);
+	setInterval(playSlide, 3000);
 
-    $(".family div").click(function(){
-        $(".family ul").stop().slideToggle()
-        $(".family i").toggleClass("on")
-    })
+	$(".notice_gal .tab").click(function () {
+		$(".notice_gal .tab").removeClass("on");
+		$(this).addClass("on");
 
+		$(".notice_gal .box").stop().fadeOut("fast");
+		$(this).next(".box").stop().fadeIn("fast");
+	});
 
-    function closeModal(){
-        $(".modal").stop().fadeOut();
-    }
+	$(".family > div").click(function () {
+		$(this).find("ul").stop().slideToggle();
+		$(this).find("div").toggleClass("on");
+		$(".family i").toggleClass("on");
+	});
 
-    $(".modal button").click(closeModal)
+	function closeModal() {
+		$(".modal").stop().fadeOut();
+	}
 
-    $(".modal .bg").click(closeModal)
+	$(".pp button").click(closeModal);
+	$(".modal .bg").click(closeModal);
+	$(".notice li:first-child").click(function () {
+		$(".modal").stop().fadeIn();
+	});
 
-    $(".notice li:first-child").click(function(){
-        $(".modal").stop().fadeIn()
-    })
-
-    $(".notice_gal h3.tab").click(function(){
-        $(".notice_gal h3.tab").removeClass("on")
-        $(this).addClass("on")
-        
-        $(".notice_gal .box").removeClass("on")
-        $(this).next(".box").addClass("on")
-
-    })
+	$(".gallery a").hover(
+		function () {
+			$(this).animate({ top: "10px", opacity: "0.5" }, 200);
+		},
+		function () {
+			$(this).animate({ top: "0px", opacity: "1" }, 200);
+		}
+	);
 });
