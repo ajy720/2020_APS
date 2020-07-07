@@ -1,0 +1,321 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #222328;
+	text-decoration: none;
+	font-style: normal;
+	list-style: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	display: block;
+}
+
+.wrap {
+	width: 1000px;
+	height: 650px;
+}
+
+.wrap > * {
+	float: left;
+}
+
+header {
+	width: 200px;
+}
+
+.container {
+	width: 800px;
+}
+
+.logo {
+	width: 200px;
+	height: 100px;
+	padding-top: 30px;
+}
+
+.logo > img {
+	width: 100%;
+	height: 40px;
+}
+
+nav a {
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+.main > li {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.main > li > a {
+	border-bottom: 1px solid #ffae1870;
+	margin-left: 10px;
+}
+
+.main > li:hover > a {
+	background-color: #ffae18;
+	border-color: #ffae1870;
+	border-radius: 10px 0 0 10px;
+}
+
+.sub {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 190px;
+	border: 1px solid #ffae1870;
+	background-color: rgba(255, 255, 255, 0.911);
+	z-index: 99;
+	border-radius: 0 10px 10px 10px;
+}
+
+.sub a {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	border-bottom: 1px solid black;
+}
+
+.sub li:last-child a {
+	border-bottom: 0;
+}
+
+.sub li:hover > a {
+	background-color: #ffae18c7;
+}
+
+.slider {
+	width: 800px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.slider a {
+	position: absolute;
+	top: 0;
+	left: -800px;
+	opacity: 0;
+}
+
+.slider a:first-child {
+	left: 0;
+	opacity: 1;
+}
+
+.content {
+	width: 100%;
+	height: 200px;
+}
+
+.content > section {
+	float: left;
+	height: 200px;
+	padding: 5px;
+}
+
+.content > section:hover h3.tab {
+	opacity: 1;
+}
+
+section.notice {
+	width: 355px;
+	padding-left: 0;
+}
+
+section.gallery {
+	width: 200px;
+}
+
+section.banner {
+	width: 245px;
+	padding-right: 0;
+}
+
+h3.tab {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #ffae18;
+	color: white;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid black;
+	margin-left: 20px;
+	transition: 0.2s;
+	opacity: 0.7;
+}
+
+.box {
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 5px;
+	height: 160px;
+	border: 1px solid black;
+	margin-top: -1px;
+}
+
+.notice .box{
+	padding-top: 1px;
+}
+
+.notice li {
+	height: 27px;
+	line-height: 27px;
+	padding: 0 5px;
+	border-bottom: 1px solid gray;
+	margin-top: 3px;
+	transition: 0.2s;
+	border-radius: 5px 5px 0 0;
+}
+
+.notice li:hover {
+	background-color: #ffae184b;
+}
+
+.notice li a {
+	width: 75%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	float: left;
+}
+
+.notice li span {
+	float: right;
+}
+
+.gallery .box {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	overflow: scroll;
+}
+
+.gallery a {
+	transition: 0.2s;
+}
+
+.gallery a:hover {
+	opacity: 0.5;
+}
+
+.gallery img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.banner .box {
+	padding: 0;
+}
+
+.fmenu {
+	width: 600px;
+	height: 30px;
+	float: right;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.copy {
+	width: 600px;
+	height: 70px;
+	padding-top: 10px;
+	float: right;
+	text-align: center;
+	font-size: 13px;
+}
+
+.copy span {
+	font-size: 12px;
+}
+
+footer .logo img,
+.copy,
+.fmenu li a {
+	opacity: 0.7;
+	transition: 0.1s;
+}
+
+footer .logo img:hover,
+.copy:hover,
+.fmenu li a:hover {
+	opacity: 1;
+}
+
+footer {
+	background-color: rgb(221, 221, 221);
+	border-radius: 15px;
+	transition: 0.1s;
+}
+
+footer:hover {
+	background-color: rgb(216, 216, 216);
+}
+
+.pp {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border: 1px solid #000;
+	width: 400px;
+	height: 300px;
+	z-index: 999;
+	padding: 10px;
+	display: none;
+}
+
+.pp h3 {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ffae18;
+}
+
+.pp p {
+	padding: 5px;
+}
+
+.pp button {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 0;
+	background-color: rgb(48, 48, 48);
+	color: white;
+	border-radius: 5px;
+	font-size: 17px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#pointer {
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	background-color: #ffae1825;
+	border-radius: 50%;
+	position: absolute;
+}
