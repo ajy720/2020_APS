@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$("nav > li").hover(
+	$(".main > li").hover(
 		function () {
 			$(this).find(".sub").stop().slideDown();
 		},
@@ -8,22 +8,17 @@ $(document).ready(function () {
 		}
 	);
 
-	var n = 0;
 	var s = $(".slider a");
+	var n = 0;
+
 	function playSlide() {
-		$(s[n]).css({ "z-index": 0 });
 		$(s[n++]).animate(
 			{
-				left: "400px",
-				opacity: 0.5,
+				left: "800px",
 			},
 			1500,
 			function () {
-				$(this).css({
-					left: "-800px",
-					opacity: 0,
-					"z-index": 1,
-				});
+				$(this).css({ left: "-800px" });
 			}
 		);
 
@@ -31,20 +26,24 @@ $(document).ready(function () {
 
 		$(s[n]).animate(
 			{
-				left: "0",
-				opacity: 1,
+				left: 0,
 			},
 			1500
 		);
 	}
 
 	setInterval(playSlide, 3000);
+	
+	$(".family > div > div").click(function(){
+		$(this).next("ul").stop().slideToggle()
+		$(this).find("i").toggleClass("on")
+	})
 
-	$(".notice li:first-child").click(function () {
-		$(".pp").fadeIn();
-	});
+	$(".notice li:first-child").click(function(){
+		$(".modal").stop().fadeIn();
+	})
 
-	$(".pp button").click(function () {
-		$(".pp").fadeOut();
-	});
+	$(".pp button").click(function(){
+		$(".modal").stop().fadeOut();
+	})
 });

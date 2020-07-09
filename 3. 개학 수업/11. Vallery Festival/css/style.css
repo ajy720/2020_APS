@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	color: #222328;
+	font-style: normal;
+}
+
+a {
+	display: block;
+}
+
+.logo {
+	width: 200px;
+	height: 100px;
+	padding-top: 30px;
+}
+
+.wrap {
+	width: 1000px;
+	height: 650px;
+}
+
+.wrap > * {
+	float: left;
+}
+
+header {
+	width: 200px;
+}
+
+.container {
+	width: 800px;
+	height: 650px;
+}
+
+.main > li {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.main a {
+	margin: 0 auto;
+	text-align: center;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+.main > li > a {
+	border-radius: 10px 0 0 10px;
+}
+
+.main > li:hover > a,
+.sub a:hover {
+	background-color: #df6d9e;
+	color: white;
+}
+
+.sub {
+	position: absolute;
+	top: 0;
+	left: 190px;
+	display: none;
+	z-index: 950;
+	background-color: rgba(255, 255, 255, 0.884);
+	border-radius: 0 10px 10px 0;
+	overflow: hidden;
+}
+
+.sub a {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	border-bottom: 1px solid #df6d9fb6;
+}
+
+.sub > li:last-child > a {
+	border-bottom: 0;
+}
+
+.slider {
+	width: 800px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider a {
+	position: absolute;
+	top: 0;
+	left: -800px;
+}
+
+.slider a:first-child {
+	left: 0;
+}
+
+.content {
+	width: 100%;
+	height: 200px;
+}
+
+.content > section {
+	float: left;
+	height: 200px;
+	padding: 5px;
+}
+
+.content .box {
+	border: 1px solid black;
+	padding: 5px;
+	height: 160px;
+	margin-top: -1px;
+}
+
+.content h3.tab {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	margin-left: 30px;
+	border: 1px solid black;
+	border-radius: 5px 5px 0 0;
+	background-color: #df6d9e;
+	color: #fff;
+}
+
+section.notice {
+	width: 350px;
+}
+
+section.gallery {
+	width: 300px;
+}
+
+section.link {
+	width: 150px;
+}
+
+.notice ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+	width: 100%;
+}
+
+.notice li {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid gray;
+	padding: 0 5px;
+}
+
+.notice li a {
+	float: left;
+	width: 70%;
+}
+
+.notice li:hover {
+	background-color: #df6d9f33;
+	border-radius: 5px 5px 0 0;
+}
+
+.notice li span {
+	float: right;
+}
+
+.gallery .box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.gallery a:hover {
+	opacity: 0.5;
+}
+.gallery img {
+	width: 110px;
+}
+
+.link img {
+	width: 40px;
+	display: block;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.link a:hover {
+	border-color: #df6d9e;
+}
+.link a {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.link a > * {
+	float: left;
+}
+
+footer > * {
+	float: left;
+}
+
+footer > .copy {
+	width: 400px;
+	text-align: center;
+	font-size: 12px;
+	height: 100px;
+	padding-top: 20px;
+}
+
+.family {
+	width: 200px;
+	padding-top: 30px;
+}
+
+.family > div {
+	width: 180px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.family > div > div {
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(211, 211, 211);
+	font-size: 18px;
+}
+
+.family > div > div:hover {
+	background-color: rgb(218, 218, 218);
+}
+
+.family ul {
+	display: none;
+}
+
+.family li {
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(233, 233, 233);
+}
+
+.family li:hover {
+	background-color: #df6d9f6c;
+}
+
+.family i {
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.family i.on {
+	transform: rotate(180deg);
+}
+
+.modal {
+	position: absolute;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.pp {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 10px;
+	height: 400px;
+	width: 500px;
+}
+
+.pp h3 {
+	text-align: center;
+	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #df6d9e;
+}
+
+.pp ul {
+	padding: 0 10px;
+}
+
+.pp li {
+	padding: 5px 0;
+}
+
+.pp button {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	background-color: rgb(37, 37, 37);
+	border: 0;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.pp button:hover {
+	background-color: rgb(53, 53, 53);
+}
