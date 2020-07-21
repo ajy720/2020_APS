@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin-right: 30px;
+    width: 600px;
+}
+
+nav > ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h2{
+    margin-left: 20px;
+}
+
+header > nav{
+    width: 600px;
+    height: 100%;
+}
+
+header li{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fn-font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#visual{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/visual.png);
+    background-size: cover;
+    background-position: 0% 20%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#visual *{
+    color: #fff;
+}
+
+#visual h2{
+    font-size: 60px;
+}
+
+#visual p{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.btn{
+    width: 120px;
+    padding: 8px 12px;
+    border: 3px solid #ddd;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255, 0.2));
+}
+
+#content{
+    display: flex;
+}
+
+#content img{
+    width: 100%;
+    height: 250px;
+}
+
+#content .img > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.info > h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info > p{
+    color: #555;
+}
+
+.item .info{
+    padding: 10px;
+}
+
+.button-row{
+    text-align: right;
+    padding: 10px;
+
+}
+
+.item{
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.btn-sm{
+    padding: 8px 12px;
+    font-size: 12px;
+    color: white;
+    width: auto;
+    border: 2px solid #ddd;
+    background-color: #70aa96;
+}
+
+.btn-sm:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#hero{
+    display: flex;
+}
+
+#hero .photo{
+    flex: 3;
+    background-image: url(./images/section2.jpg);
+    background-size: cover;
+    min-height: 300px;
+    background-position: 0px -70px;
+}
+
+#hero .text{
+    flex: 2;
+    padding: 20px;
+    background-color: #70aa96;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#hero .text * {
+    color: white
+}
+
+#hero h1{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#hero p{
+    margin-top: 20px;
+}
+
+#support{
+    background-image: url(./images/content.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+}
+
+#support > div{
+    flex: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#support .info-slot{
+    display: flex;
+    min-height: 100px;
+}
+
+.info-slot i{
+    font-size: 60px;
+    color: #555;
+}
+
+.info-slot .icon-div{
+    flex: 1;
+}
+
+.info-slot .text-div{
+    padding-left: 10px;
+    flex: 4;
+}
+
+#support > div:last-child{
+    align-items: flex-end;
+}
+
+footer{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+footer *{
+    color: white;
+}
+
+footer h2{
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+footer p{
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: right;
+}

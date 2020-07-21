@@ -40,10 +40,10 @@ $(document).ready(() => {
 
 	setInterval(playSlide, 3000);
 
-	$(".notice li:first-child").click(function(){
-		$(".pp").stop().fadeIn()
-	})
-	$(".pp button").click(function(){
-		$(".pp").stop().fadeOut()
-	})
+	$(".notice li:first-child").click(function () {
+		$(".pp").stop().fadeIn();
+	});
+	$(".pp button").click(function () {
+		$(".pp").stop().fadeOut();
+	});
 });

@@ -68,7 +68,8 @@ nav a {
 	overflow: hidden;
 }
 
-.main > li:hover > a {
+.main > li:hover > a,
+.main > li > a:focus {
 	background-color: #64c1ff;
 	border-right-color: gray;
 	border-bottom: none;
@@ -197,7 +198,7 @@ nav a {
 	padding-top: 15px;
 }
 
-.gallery a{
+.gallery a {
 	display: inline-block;
 }
 
